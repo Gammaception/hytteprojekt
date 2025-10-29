@@ -15,7 +15,7 @@
 <style>
   .hero {
     height: 60vh;
-    background: url("/gallery/a1.jpg") center / cover no-repeat;
+    background: url("/public/a1.jpg") center / cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
