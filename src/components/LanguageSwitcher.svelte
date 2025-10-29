@@ -26,5 +26,13 @@
     box-shadow:0 2px 6px rgba(0,0,0,.15);
   }
   button:hover{background:#f0f0f0;}
+
+  /* Increase button size on small screens */
+  @media (max-width: 480px) {
+    .lang-switcher button {
+      font-size: 1rem;
+      padding: .5rem 1rem;
+    }
+  }
 </style>
 
