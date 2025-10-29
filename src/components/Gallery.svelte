@@ -4,10 +4,10 @@
 
   // Demo images – replace with your own if you wish
   const photos = [
-    '/public/a2.jpg',
-    '/public/a3.jpg',
-    '/public/a4.jpg',
-    '/public/a5.jpg'
+    '/a2.jpg',
+    '/a3.jpg',
+    '/a4.jpg',
+    '/a5.jpg'
   ];
 </script>
 
