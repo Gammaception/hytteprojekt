@@ -1,31 +1,31 @@
 <script>
-  // You can import global styles or components here
+  import Hero from './components/Hero.svelte';
+  import Features from './components/Features.svelte';
+  import Gallery from './components/Gallery.svelte';
+  import BookingCTA from './components/BookingCTA.svelte';
+  import Footer from './components/Footer.svelte';
+
+  // You can customize props here or fetch data via an API
 </script>
 
-<svelte:head>
-  <title>My Modern Website</title>
-  <link rel="icon" href="/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Add any meta tags or external stylesheets here -->
-</svelte:head>
+<Hero />
 
-<main class="container">
-  <h1>Welcome to My Modern Website</h1>
-  <!-- Your main app component goes here -->
-</main>
+<Features />
+<Gallery />
+<BookingCTA />
+
+<Footer />
 
 <style>
   :global(body) {
-    margin: 0;
+    margin:0;
     font-family: system-ui, sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
+    color:#333;
+    background:#fafafa;
+    line-height:1.6;
   }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+  h2 {color:#222;}
 </style>
+
+
 

@@ -2,7 +2,7 @@
   "name": "hytteprojekt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -13,7 +13,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "svelte": "^5.43.0",
+    "svelte-preprocess": "^6.0.3",
     "vite": "^7.1.12"
   }
 }
-
