@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Velkommen til Havslottet",
+    "subtitle": "Nyt naturen uten å gå på kompromiss med komforten.",
+    "view": "Se fordeler"
+  },
+  "features": {
+    "heading": "Hvorfor bli hos oss?",
+    "beds": {"title": "Koselige senger", "desc": "Konge‑størrelse senger med myke laken."},
+    "firepit": {"title": "Tobakkbål", "desc": "Nyt kvelder rundt bålet."},
+    "kitchen": {"title": "Fullt utstyrt kjøkken", "desc": "Kaffe, te og komfyr."},
+    "nature": {"title": "Omringet av natur", "desc": "Turgåing, sykling eller bare slappe av."}
+  },
+  "gallery": {
+    "heading": "Fotogalleri"
+  },
+  "bookingCTA": {
+    "heading": "Bestill oppholdet ditt i dag!",
+    "pricePerNight": "$120 per natt – fullt refusjon.",
+    "reserveButton": "Bestill nå!"
+  },
+  "footer": {
+    "text": "© 2025 Havslottet | All Rights Reserved"
+  }
+}

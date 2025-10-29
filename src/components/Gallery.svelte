@@ -1,15 +1,19 @@
 <script>
+  // Import the translation helper from your i18n module
+  import { t } from '../i18n.js';
+
   // Demo images – replace with your own if you wish
   const photos = [
-    "https://source.unsplash.com/800x600/?cabin,fireplace",
-    "https://source.unsplash.com/800x600/?cabin,beds",
-    "https://source.unsplash.com/800x600/?cabin,dining",
-    "https://source.unsplash.com/800x600/?cabin,wildlife"
+    '/gallery/a2.jpg',
+    '/gallery/a3.jpg',
+    '/gallery/a4.jpg',
+    '/gallery/a5.jpg'
   ];
 </script>
 
 <section class="gallery">
-  <h2>Photo Gallery</h2>
+  <!-- Use the translation helper for the heading -->
+  <h2>{$t('gallery.heading')}</h2>
   <div class="grid">
     {#each photos as p}
       <img src={p} alt="Cabin photo" loading="lazy" />
@@ -29,7 +33,9 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   img {
-    width:100%; height:auto; border-radius:6px;
+    width:100%;
+    height:auto;
+    border-radius:6px;
     object-fit:cover;
   }
 </style>

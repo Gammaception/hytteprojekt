@@ -1,19 +1,22 @@
 <script>
+  // Import i18n and set a default locale
+  import * as i18n from './i18n.js';
+  const { locale } = i18n;
+  locale.set('en');
+
+  import LanguageSwitcher from './components/LanguageSwitcher.svelte';
   import Hero from './components/Hero.svelte';
   import Features from './components/Features.svelte';
   import Gallery from './components/Gallery.svelte';
   import BookingCTA from './components/BookingCTA.svelte';
   import Footer from './components/Footer.svelte';
-
-  // You can customize props here or fetch data via an API
 </script>
 
+<LanguageSwitcher />
 <Hero />
-
 <Features />
 <Gallery />
 <BookingCTA />
-
 <Footer />
 
 <style>
@@ -26,6 +29,4 @@
   }
   h2 {color:#222;}
 </style>
-
-
 

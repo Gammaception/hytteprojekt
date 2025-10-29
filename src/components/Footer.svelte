@@ -1,5 +1,9 @@
+<script>
+  import { t } from '../i18n.js';
+</script>
+
 <footer class="footer">
-  <p>© {new Date().getFullYear()} Cozy Cabin Rentals | All Rights Reserved</p>
+  <p>{$t('footer.text', { year: new Date().getFullYear() })}</p>
 </footer>
 
 <style>

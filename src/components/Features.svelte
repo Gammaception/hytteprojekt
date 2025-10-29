@@ -1,20 +1,23 @@
 <script>
-  const features = [
-    { icon: "🛌", title: "Cozy Beds", desc: "Queen‑size beds with soft linens." },
-    { icon: "🔥", title: "Wood‑Burning Fire Pit", desc: "Enjoy evenings by the fire." },
-    { icon: "🍽️", title: "Fully Equipped Kitchen", desc: "Coffee, tea, and a stove." },
-    { icon: "🌲", title: "Surrounded by Nature", desc: "Hike, bike, or simply relax." },
-  ];
+  import { t } from '../i18n.js';   // translation helper
+
+  const featureKeys = ['beds', 'firepit', 'kitchen', 'nature'];
+  const icons = {
+    beds: '🛌',
+    firepit: '🔥',
+    kitchen: '🍽️',
+    nature: '🌲'
+  };
 </script>
 
 <section class="features" id="features">
-  <h2>Why stay with us?</h2>
+  <h2>{$t('features.heading')}</h2>
   <div class="grid">
-    {#each features as f}
+    {#each featureKeys as key}
       <article class="feature-card">
-        <span class="icon">{f.icon}</span>
-        <h3>{f.title}</h3>
-        <p>{f.desc}</p>
+        <span class="icon">{icons[key]}</span>
+        <h3>{$t(`features.${key}.title`)}</h3>
+        <p>{$t(`features.${key}.desc`)}</p>
       </article>
     {/each}
   </div>

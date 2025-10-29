@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Welcome to Havslottet!",
+    "subtitle": "Enjoy nature without sacrificing comfort.",
+    "view": "View features"
+  },
+  "features": {
+    "heading": "Why stay with us?",
+    "beds": {"title": "Cozy Beds", "desc": "Queen‑size beds with soft linens."},
+    "firepit": {"title": "Wood‑Burning Fire Pit", "desc": "Enjoy evenings by the fire."},
+    "kitchen": {"title": "Fully Equipped Kitchen", "desc": "Coffee, tea, and a stove."},
+    "nature": {"title": "Surrounded by Nature", "desc": "Hike, bike, or simply relax."}
+  },
+  "gallery": {
+    "heading": "Photo Gallery"
+  },
+  "bookingCTA": {
+    "heading": "Book Your Stay Today!",
+    "pricePerNight": "$120 per night – fully refundable.",
+    "reserveButton": "Order now!"
+  },
+  "footer": {
+    "text": "© 2025 Havslottet | All Rights Reserved"
+  }
+}

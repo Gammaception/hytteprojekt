@@ -1,7 +1,13 @@
 <script>
-  export let pricePerNight = "$120";
-  const startDate = new Date().toISOString().substr(0,10);
-  const endDate = new Date(Date.now() + 86400000 * 7).toISOString().substr(0,10);
+  // Import the translation helper
+  import { t } from '../i18n.js';
+
+  // The nightly price (no longer exported)
+  const pricePerNight = '$120';
+
+  // Booking dates
+  const startDate = new Date().toISOString().substr(0, 10);
+  const endDate   = new Date(Date.now() + 86400000 * 7).toISOString().substr(0, 10);
 
   function bookNow() {
     alert(`Booking started for ${pricePerNight}/night.\nFrom: ${startDate}\nTo: ${endDate}`);
@@ -9,14 +15,14 @@
 </script>
 
 <section class="booking">
-  <h2>Book Your Stay Today!</h2>
-  <p>{pricePerNight} per night – fully refundable.</p>
-  <button on:click={bookNow}>Reserve Now</button>
+  <h2>{$t('bookingCTA.heading')}</h2>
+  <p>{$t('bookingCTA.pricePerNight', { price: pricePerNight })}</p>
+  <button on:click={bookNow}>{$t('bookingCTA.reserveButton')}</button>
 </section>
 
 <style>
   .booking {
-    background:#ff7f50;
+    background:#538cd2;
     color:white;
     padding:3rem 1.5rem;
     text-align:center;
@@ -27,7 +33,7 @@
     padding:.75rem 1.25rem;
     font-size:1.05rem;
     background:#fff;
-    color:#ff7f50;
+    color:#538cd2;
     border:none;
     cursor:pointer;
     border-radius:4px;

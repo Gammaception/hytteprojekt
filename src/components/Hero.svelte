@@ -1,15 +1,13 @@
 <script>
-  export let title = "Welcome to Cozy Cabin";
-  export let subtitle =
-    "Enjoy nature without sacrificing comfort.";
+  import { t } from '../i18n.js'; // translation helper
 </script>
 
 <section class="hero">
   <div class="overlay">
-    <h1>{title}</h1>
-    <p>{subtitle}</p>
+    <h1>{$t('hero.title')}</h1>
+    <p>{$t('hero.subtitle')}</p>
     <button on:click={() => window.scrollTo({ top: 600, behavior: 'smooth' })}>
-      View Features
+      {$t('hero.view')}
     </button>
   </div>
 </section>
@@ -17,7 +15,7 @@
 <style>
   .hero {
     height: 60vh;
-    background: url("https://source.unsplash.com/featured/?cabin,nature") center / cover no-repeat;
+    background: url("/gallery/a1.jpg") center / cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -35,13 +33,14 @@
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border: none;
-    background: #ff7f50;
+    background: #538cd2;
     color: white;
     cursor: pointer;
     border-radius: 4px;
     transition: background .2s;
   }
   button:hover {
-    background: #e66b44;
+    background: #538cd2;
   }
 </style>
+
