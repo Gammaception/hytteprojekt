@@ -2,7 +2,6 @@
   "name": "havslottet1",
   "compatibility_date": "2025-10-29",
   "assets": {
-    "directory": "./",
-    "not_found_handling": "single-page-application"
+    "directory": "./src/main.ts"
   }
 }
